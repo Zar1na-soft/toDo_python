@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% extends 'todo/template.html' %}
+{% block content%}
+<div class="header">
+    <a href="{% url 'todos' %}">Go back</a>
+</div>
+
+<div class="create-page">
+    <form method="POST" >
+    {% csrf_token %}
+    {{form.as_p}}
+    <input class="styling" type="submit", value="Add to the list">
+
+</form>
+
+</div>
+
+{%endblock content%}
+</body>
+</html>

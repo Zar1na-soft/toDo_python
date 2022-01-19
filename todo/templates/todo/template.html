@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>To Do List</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@200&family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <style>
+        body{
+        background:linear-gradient(90deg, #24A19C 0%, #FAEEE7 50%, #D96098 100%);
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+        padding-top: 70px;
+        }
+
+        .container{
+        max-width: 700px;
+        margin: auto;
+        background-color: #FFF;
+        -webkit-box-shadow: 3px 3px 15px -5px rgba(0, 0, 0, 0.30);
+        box-shadow: 3px 3px 15px -5px rgba(0, 0 ,0, 0.30);}
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        {font-family: 'Work Sans', sans-serif;}
+
+        a,
+        p{
+        color: #325288;}
+
+        .header{
+        display: flex;
+        justify-content: space-between;
+        color: #325288;
+        padding: 25px;
+        background-color: #FFA6D5;
+        }
+
+        .header a{
+        text-decoration: none;
+        font-weight: bold;}
+
+        .todo-wrapper{
+        display:flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 30px;
+        background-color: #fff;
+        border-top: 5px solid rbg(226, 226, 226);}
+
+        .todo_header{
+        display:flex;}
+
+        .todo_header a{
+        text-decoration: none;
+        color:#325288;
+        margin-left: 10px;}
+
+        .todo-icon-complete{
+        height: 20px;
+        width: 20px;
+        background-color: #325288;
+        border-radius: 50%;}
+
+        .todo-icon{
+        height:20px;
+        width: 20px;
+        background-color: rgb(218, 218, 218);
+        border-radius: 50%;}
+
+        .delete-word {
+        text-decoration: none;
+        font-weight: 1000;
+        font-size: 17px;
+        line-height: 0;}
+
+        .add_item-wrapper{
+        display: flex;
+        padding-top:5px;
+
+        }
+
+        .add-link{
+        text-decoration:none;
+        padding:10px;
+        font-size: 22px;
+        color:#fff;
+
+
+        }
+
+        input[type=text],
+        input[type=password],
+        textarea{
+        border: 1px solid #325288;
+        border-radius: 5px;
+        padding:10px;
+        width: 90%;}
+
+        label{
+        padding-top: 10px !important;
+        display:block;}
+
+        .button{
+        background-color:#325288;
+        padding: 10px;
+        font-size: 14px;
+        cursor:pointer;
+        text-decoration:none;
+        }
+
+       .styling{
+       background-color:#325288;
+       padding: 10px;
+       font-size: 10px;
+       cursor: pointer;
+       font-color: #FAEEE7;
+       border-color: #325288;
+       color: #fff;
+       border-radius: 20px;
+       }
+       .create-page{
+       padding:20px;}
+
+    </style>
+</head>
+<body>
+<div class="container">
+    {% block content%}
+
+
+    {% endblock content%}
+</div>
+</body>
+</html>

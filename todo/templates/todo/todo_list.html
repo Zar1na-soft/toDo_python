@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<!-- task=list
+tasks=todos
+task=todo1
+-->
+<body>
+{% extends 'todo/template.html' %}
+{% block content%}
+
+<div class="header">
+    {%if request.user.is_authenticated %}
+    <p>{{request.user}}</p>
+    <a href="{% url 'logout' %}">Log out</a>
+    {% else %}
+    <a href="{% url 'login' %}">Login</a>
+    {%endif%}
+</div>
+
+<div class="button">
+<div class="add_item-wrapper">
+   <a class="add-link" href='{% url 'todo-create' %}'>Add an item</a>
+</div>
+</div>
+
+
+
+<div class="todo_list-wrapper">
+    {%for list in todos%}
+        <div class="todo-wrapper">
+           {% if list.complete %}
+                <div class="todo_header">
+                    <div class="todo-icon-complete"> </div>
+                    <i><s><a href="{% url 'todo-update' list.id %}">{{list}}</a></s></i>
+                </div>
+            <a class="delete-word" href="{% url 'todo-delete' list.id%}">Delete</a>
+            {% else %}
+            <div class="todo_header">
+                    <div class="todo-icon"> </div>
+                    <a href="{% url 'todo-update' list.id %}">{{list}}</a>
+            </div>
+            <a class="delete-word" href="{% url 'todo-delete' list.id %}">Delete</a>
+            {% endif%}
+
+        </div>
+    {% empty %}
+    <div class="create-page">
+        <h3>Create your list</h3>
+    </div>
+
+    {% endfor %}
+</div>
+
+{%endblock content%}
+
+
+</body>
+</html>

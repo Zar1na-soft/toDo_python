@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% extends 'todo/template.html' %}
+{% block content%}
+<div class="header">
+    <h1>Sign up</h1>
+</div>
+
+<div class="create-page">
+    <form method="POST">
+    {% csrf_token %}
+    {{form.as_p}}
+    <input class="styling" type="submit" value="Sign up">
+</form>
+<p>Do u have an account? <a href="{% url 'login' %}">Sign in</a> </p>
+</div>
+
+{% endblock content%}
+</body>
+</html>
