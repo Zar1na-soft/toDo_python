@@ -1,12 +1,10 @@
-# django_git_merey
+# toDo_python
 
 
 
 ## Title
-This is my To Do list app with Django+Postgresql
-```html
-Done by: Orynbassar Merey
-Group:SE-2010
+```bash
+Tulep Zarina SE-2009
 ```
 
 ### Table of Contents
@@ -31,7 +29,6 @@ Group:SE-2010
 ```python $ python3 manage.py runserver```
 
 
-[Back To The Top](#django_git_merey)
 
 ## Usage
 After installing needed modules, just execute app.py, it will start server.
@@ -59,39 +56,10 @@ from django.contrib.auth import login
 2.User must create new task;
 
 ```
-<img width="1440" alt="Снимок экрана 2022-01-18 в 18 02 52" src="https://user-images.githubusercontent.com/80208323/150104586-aaa74221-de39-4fd5-ae2f-405c47d2f9a1.png">
-
-<img width="1440" alt="Снимок экрана 2022-01-18 в 18 02 11" src="https://user-images.githubusercontent.com/80208323/150104904-1697da9e-7283-4f8d-96e6-217ce9b860cf.png">
-
-<img width="1440" alt="Снимок экрана 2022-01-18 в 18 02 33" src="https://user-images.githubusercontent.com/80208323/150104957-4b5475b1-17d0-48ae-8e66-edea54ff78fe.png">
-
-
-[Back To The Top](#django_git_merey)
 
 ## License
 
 MIT License
-
-Copyright (c) 2021 Overexm
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
-
-[Back To The Top](#django_git_merey)
 
 
 
